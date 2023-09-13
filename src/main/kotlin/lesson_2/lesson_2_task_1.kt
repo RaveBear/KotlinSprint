@@ -6,6 +6,6 @@ fun main() {
     val grades2: Double = 4.0
     val grades3: Double = 3.0
     val grades4: Double = 5.0
-    val GPA = (grades1+grades2+grades3+grades4) * 4 / 16
-    println(GPA)
+    val gpa = (grades1 + grades2 + grades3 + grades4) / 4
+    println(gpa)
 }
