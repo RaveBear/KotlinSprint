@@ -11,14 +11,14 @@ fun main() {
 
     if (userFirstNumber == FIRST_WIN_NUMBER && userSecondNumber == SECOND_WIN_NUMBER) {
         println("Поздравляем! Вы выиграли главный приз!")
-    }
-    if ((userFirstNumber == FIRST_WIN_NUMBER && userSecondNumber != SECOND_WIN_NUMBER) ||
+
+    } else if ((userFirstNumber == FIRST_WIN_NUMBER && userSecondNumber != SECOND_WIN_NUMBER) ||
         (userFirstNumber != FIRST_WIN_NUMBER && userSecondNumber == SECOND_WIN_NUMBER)) {
         println("Вы выиграли утешительный приз!")
         println("Для победы нужны были числа: $FIRST_WIN_NUMBER и $SECOND_WIN_NUMBER")
-    }
-    if (userFirstNumber != FIRST_WIN_NUMBER && userSecondNumber != SECOND_WIN_NUMBER) {
+
+    } else {userFirstNumber != FIRST_WIN_NUMBER && userSecondNumber != SECOND_WIN_NUMBER
         println("Неудача! Крутите барабан!")
         println("Для победы нужны были числа: $FIRST_WIN_NUMBER и $SECOND_WIN_NUMBER")
     }
-}
+    }
