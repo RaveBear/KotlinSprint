@@ -11,7 +11,8 @@ fun main() {
     println("Введите второе число: ")
     val userSecondNumber = readln().toInt()
 
-    if (userFirstNumber == firstWinNum && userSecondNumber == secondWinNum)
+    if (userFirstNumber == firstWinNum && userSecondNumber == secondWinNum
+        || userFirstNumber == secondWinNum && userSecondNumber == firstWinNum)
         println("Вы выиграли главный приз!")
     else if (userFirstNumber == firstWinNum || userSecondNumber == secondWinNum)
         println("Вы угадали одно число и получаете утешительный приз!")
