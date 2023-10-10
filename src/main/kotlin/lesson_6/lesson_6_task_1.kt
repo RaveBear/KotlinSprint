@@ -16,14 +16,12 @@ fun main() {
         val entryUserName = readln()
         println("Пароль:")
         val entryUserPassword = readln()
+
         if (entryUserName == regUserName && entryUserPassword == regUserPassword)
             println("Авторизация прошла успешно")
         else
-        break
-
+            println("Имя пользователя или пароль введены неправильно!\nПопробуйте заново.")
 
     } while (entryUserName != regUserName || entryUserPassword != regUserPassword)
-        println("Имя пользователя или пароль введены неправильно!\nПопробуйте заново.")
-        return
 
 }
