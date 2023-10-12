@@ -5,8 +5,6 @@ fun main() {
     var userSeconds = readln().toInt()
 
     println("Таймер включен")
-    while (userSeconds > 0) {
         println("Прошло ${userSeconds--} секунд")
         Thread.sleep(1000)
-    }
 }
