@@ -4,7 +4,7 @@ import kotlin.random.Random
 import kotlin.random.nextInt
 
 fun main() {
-    val winNum = Random.nextInt(1..9)
+    val winNum = (1..9).random()
     println(winNum)
     var userTry = 2
 
@@ -13,7 +13,7 @@ fun main() {
         val userNum = readln().toInt()
         if (userNum == winNum) {
             println("Это была великолепная игра!")
-            break
+            return
         } else
             println("Вы не угадали! Осталось попыток: ${--userTry}")
     } while (userTry > 0)
