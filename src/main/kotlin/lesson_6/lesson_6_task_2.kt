@@ -7,5 +7,5 @@ fun main() {
 
     println("Таймер включен")
     Thread.sleep(timerSeconds)
-    println("Прошло ${userSeconds--} секунд")
+    println("Прошло ${userSeconds} секунд")
 }
