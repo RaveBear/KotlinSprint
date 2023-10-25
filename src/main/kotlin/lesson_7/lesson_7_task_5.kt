@@ -8,6 +8,10 @@ fun main() {
 
     for (x in 1..maxLenghtPass) {
         password += symbolRandom.random()
+        if (maxLenghtPass < 6) {
+            println("Пароль не должен быть менее 6 символов.\nПопробуйте снова")
+            return
+        }
     }
     println(password)
 
